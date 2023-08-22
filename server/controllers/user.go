@@ -57,7 +57,7 @@ func (u *UserController) GetById() {
 	u.Ctx.JSON(user)
 }
 
-func (u *UserController) PostSignin() {
+func (u *UserController) PostSignup() {
 	user := models.User{}
 	u.Ctx.ReadJSON(&user)
 	password := []byte(user.Password)
@@ -143,7 +143,9 @@ func (u *UserController) PostLogin() {
 
 	u.Ctx.StatusCode(iris.StatusOK)
 	u.Ctx.JSON(iris.Map{
-		"message": "login successfull",
+		"userID":   user.ID,
+		"userName": user.Name,
+		"message":  "login successfull",
 	})
 }
 
