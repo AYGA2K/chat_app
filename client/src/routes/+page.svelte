@@ -97,14 +97,16 @@
 </script>
 
 <div class=" px-8 py-4 w-full h-screen-5">
-	<p>Welcome, {userData ? userData.name : 'Guest'} (ID: {userData ? userData.id : 'No ID'})!</p>
 	<div class="flex justify-center gap-4">
 		<input type="text" bind:value={roomName} class="input input-bordered" placeholder="room name" />
 		<button class=" btn btn-neutral" on:click={createRoom}> create room </button>
 	</div>
 	<div class="flex h-full gap-20 pt-5">
 		<div class=" w-1/4">
-			<div class="font-bold">Rooms</div>
+			<div class="flex items-center justify-between">
+				<div class="font-bold">Rooms</div>
+				<button class="btn btn-primary" on:click={fetchRooms}> refresh</button>
+			</div>
 			<div class=" flex flex-col gap-4 pt-6">
 				{#each rooms as room}
 					<div class="p-4 flex border-sky-700 border-2 items-center rounded-md w-full">
