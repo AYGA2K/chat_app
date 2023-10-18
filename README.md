@@ -15,7 +15,7 @@ Our chat application, developed with Golang, Svelte, and PostgreSQL, comes with 
 
 - **User Registration:** Users can create a new account by providing a unique username and password.
 
-- **User Authentication:** Registered users can log in securely.
+- **User Authentication:** Registered users can log in.
 
 - **Create Rooms:** Users can create new chat rooms and set room names.
 
