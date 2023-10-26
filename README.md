@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to our Chat App! This document serves as a guide to help you understand how to use our chat application, which has been developed using Golang for the backend, Svelte for the frontend, and PostgreSQL as the database. It allows users to sign up, log in, create rooms, join rooms, and chat with other users in these rooms.
+ This app has been developed using Golang for the backend, Svelte for the frontend, and PostgreSQL as the database. It allows users to sign up, log in, create rooms, join rooms, and chat with other users in these rooms.
 
 ## Table of Contents
 
